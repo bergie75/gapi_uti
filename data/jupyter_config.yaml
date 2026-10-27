@@ -1,0 +1,71 @@
+risk_probabilities:
+- 0.6
+- 0.3
+- 0.1
+
+risk_ratios:
+- 1
+- 1.5
+- 2
+
+true_strain_probs:
+- 0.5
+- 0.35
+- 0.15
+
+phys_beta_pars:
+- 3.0
+- 7.0
+
+phys_dir_pars:
+- 60
+- 30
+- 10
+
+strain_treatments_financial:
+- 0
+- 5
+- 10
+- 50
+
+hospitalization_prob:
+- 0
+- 0.01
+- 0.02
+- 0.05
+
+adverse_event_prob:
+- 0
+- 0.01
+- 0.02
+- 0.05
+
+diag_sens_spec:
+  dipstick: [0.7, 0.05]
+  urine_culture: [0.9, 0.03]
+  rapid_test: [0.95, 0.01]
+  rapid_plus_ast: [0.95, 0.0]
+
+treatment_delays:
+  clinical: 0
+  dipstick: 0.1
+  urine_culture: 2
+  rapid_test: 0.1
+  rapid_plus_ast: 3
+
+diagnostic_costs:
+  clinical: 0
+  dipstick: 5
+  urine_culture: 8
+  rapid_test: 15
+  rapid_plus_ast: 35
+
+uti_prev: 0.15
+un_risk_prop: 0.0
+un_risk_exp_scale: 0.25
+num_patients: 1000
+qaly_lambda: 5
+resolution_delay: 3
+extra_diag: 20
+hospitalization_cost: 100
+adverse_event_cost: 20
